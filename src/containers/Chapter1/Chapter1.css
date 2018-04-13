@@ -1,17 +1,48 @@
 .Text {
-  display: flex;
+    float:left;
   justify-content: center;
   align-items: center;
-  width: 49%;
-  flex-direction: row;
-
+  width: 50%;
+  font-size: 24px;
 }
 .Img {
-  width: 100%;
-  display: flex;
-  height: 492px;
-  background-image: url("../../assets/img/test.svg");
+  width: 189px;
+  float:left;
+  position: relative;
+  top: 100px;
+  left:100px;
+  height: 187px;
+  background-image: url("../../assets/img/tryb.svg");
+  transform: rotate(0deg);
+}
+
+.Img2 {
+  width: 189px;
+  float:left;
+  position: relative;
+  top: 20px;
+  left:71px;
+  height: 187px;
+  background-image: url("../../assets/img/tryb.svg");
+  transform: rotate(-3deg);
 }
 .SubContainer {
-  display: flex;
+  float:left;
+  width: 50%;
+}
+.SubContainer2 {
+  float:left;
+  width: 40%;
+  margin-right: 10%;
+}
+.Wraper {
+  width: 100%;
+  min-height: 500px;
+  margin-top: 450px;
+}
+
+.TextBlock {
+  width: 100%;
+  float:left;
+
 }

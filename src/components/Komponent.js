@@ -1,7 +1,7 @@
 import Observer from '@researchgate/react-intersection-observer';
 import React, { Component } from 'react';
 import classes from './Komponent.css';
-import ScrollManager from 'window-scroll-manager'
+import ScrollManager from 'window-scroll-manager';
 
 const getPrintableThreshold = (ratio, range) =>
   range.reduce((prev, curr) =>
@@ -80,7 +80,7 @@ componentDidMount(){
                1.00]}
                root={null}
             >
-              <div style={{  transform: `rotate(${this.state.css * this.state.threshold/10}deg)`}}className={classes.Box+ ` ${this.state.visibility}`} />
+              <div style={{  transform: `rotate(${this.state.scroll * this.state.threshold/10}deg)`}}className={classes.Box+ ` ${this.state.visibility}`} />
             </Observer>
           </div>
         </div>

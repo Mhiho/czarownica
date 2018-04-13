@@ -6,6 +6,7 @@ import classes from './Chapter1.css';
 import LeftSide from '../../components/LeftSide/LeftSide';
 import Observer from '@researchgate/react-intersection-observer';
 import Komponent from '../../components/Komponent';
+import ScrollManager from 'window-scroll-manager';
 
 class Chapter1 extends Component {
   constructor(props){
@@ -13,7 +14,7 @@ class Chapter1 extends Component {
   }
   state = {
     scroll: 0,
-    texts: {}
+    texts: []
   }
 
 
@@ -22,31 +23,42 @@ componentDidMount(){
     this.setState({texts: snapshot.val()})
     console.log(this.state.texts);
   });
+  const sm = new ScrollManager();
+  window.addEventListener('window-scroll', (e) => {
+    let scroll =  e.detail.scrollPosition;
+  this.setState({scroll: scroll})
+});
 }
 
 render(){
-
+  let renderText = this.state.texts.map((p,id)=>{
+    return (
+    <Chapter
+      key={id}
+      p={p}
+      className={classes.Text}
+    />
+  )
+  })
   return (
     <div>
-    <Komponent />
-
-    <div
-    className={classes.SubContainer}>
-
-
-
-    <LeftSide
-      classe={classes.Img}
-      />
-      <Chapter
-        key={this.state.texts['id']}
-        p={this.state.texts['text']}
-        className={classes.Text}
-      />
-
+      <div className={classes.SubContainer}>
+        <div className={classes.Wraper}>
+          <div
+          style={{  transform: `rotate(${this.state.scroll * 0.3}deg)`}}
+          className={classes.Img}
+          />
+            <div
+            style={{  transform: `rotate(${-this.state.scroll * 0.3}deg)`}}
+            className={classes.Img2}
+            />
+        </div>
       </div>
+        <div className={classes.SubContainer2}>
+      {renderText}
+        </div>
 
-    </div>
+  </div>
 
   )
 }

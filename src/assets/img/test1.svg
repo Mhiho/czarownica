@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(0 867.64)">
+  <path d="m705.03-226.17-96.67 96.67-136.71 2e-5 -96.67-96.67v-136.71l96.67-96.67 136.71-3e-5 96.67 96.67z"/>
+  <path d="m700.53-228.03-94.034 94.034-132.98 1e-5 -94.034-94.034v-132.98l94.034-94.034 132.98-3e-5 94.034 94.034z" fill="#fff"/>
+  <g transform="matrix(.14656 0 0 .14656 481.38 -390.13)">
+   <path d="m200 452.36c110.46 0 200 89.543 200 200-1e-5 110.46 89.543 200 200 200 110.46 0 200-89.543 200-200 2e-5 220.91-179.09 400-400 400s-400-179.09-400-400c-8e-6 -110.46 89.543-200 200-200zm0 150c-27.614 0-50 22.386-50 50s22.386 50 50 50 50-22.386 50-50c1e-5 -27.614-22.386-50-50-50z" fill="#f9f9f9"/>
+   <circle transform="matrix(-2.5972 0 0 2.5972 -124.23 511.55)" cx="-124.84" cy="54.216" r="19.252"/>
+   <circle transform="matrix(-2.5972 0 0 2.5972 275.77 511.55)" cx="-124.84" cy="54.216" r="19.252" fill="#fff"/>
+   <path d="m600 852.36c-110.46 0-200-89.543-200-200 0-110.46-89.543-200-200-200-110.46 0-200 89.543-200 200-8e-6 -220.91 179.09-400 400-400s400 179.09 400 400c-1e-5 110.46-89.543 200-200 200zm0-150c27.614 2e-5 50-22.386 50-50-1e-5 -27.614-22.386-50-50-50s-50 22.386-50 50 22.386 50 50 50z"/>
+  </g>
+  <g transform="matrix(.092116 .092116 -.092116 .092116 632.33 -525.03)">
+   <rect x="500" y="952.36" width="200" height="100"/>
+   <rect x="800" y="952.36" width="200" height="100"/>
+   <rect x="500" y="752.36" width="200" height="100"/>
+   <rect x="800" y="752.36" width="200" height="100"/>
+   <rect x="500" y="552.36" width="200" height="100"/>
+   <rect x="800" y="552.36" width="200" height="100"/>
+  </g>
+  <g transform="matrix(.092116 -.092116 .092116 .092116 463.99 -416.6)">
+   <rect x="-500" y="275.18" width="200" height="100"/>
+   <rect x="-200" y="275.18" width="200" height="100"/>
+   <rect x="-500" y="75.181" width="500" height="100"/>
+   <rect x="-500" y="-124.82" width="500" height="100"/>
+  </g>
+  <g transform="matrix(0 .13027 -.13027 0 680.07 -392.23)">
+   <rect transform="scale(1,-1)" x="500" y="24.819" width="200" height="100"/>
+   <rect transform="scale(1,-1)" x="800" y="24.819" width="200" height="100"/>
+   <rect transform="scale(1,-1)" x="500" y="-175.18" width="500" height="100"/>
+   <rect transform="scale(1,-1)" x="500" y="-375.18" width="500" height="100"/>
+  </g>
+  <g transform="matrix(0 .13027 -.13027 0 520.77 -327.09)">
+   <rect transform="translate(0 552.36)" y="200" width="200" height="100"/>
+   <rect transform="translate(0 552.36)" y="400" width="200" height="100"/>
+   <rect transform="translate(0 552.36)" x="300" y="200" width="200" height="100"/>
+   <rect transform="translate(0 552.36)" x="300" y="400" width="200" height="100"/>
+   <rect transform="translate(0 552.36)" width="500" height="100"/>
+  </g>
+  <g transform="matrix(.13027 0 0 .13027 507.43 -522.81)">
+   <rect transform="translate(0 552.36)" width="500" height="100"/>
+   <rect transform="translate(0 552.36)" y="200" width="200" height="100"/>
+   <rect transform="translate(0 552.36)" x="300" y="200" width="200" height="100"/>
+   <rect transform="translate(0 552.36)" y="400" width="500" height="100"/>
+  </g>
+  <g transform="matrix(.092116 -.092116 .092116 .092116 576.63 -303.95)">
+   <rect x="-500" y="952.36" width="500" height="100"/>
+   <rect x="-500" y="752.36" width="500" height="100"/>
+   <rect x="-500" y="552.36" width="500" height="100"/>
+  </g>
+  <g transform="matrix(.092116 .092116 .092116 -.092116 355.55 -156.13)">
+   <rect transform="translate(0 552.36)" y="200" width="200" height="100"/>
+   <rect transform="translate(0 552.36)" y="400" width="200" height="100"/>
+   <rect transform="translate(0 552.36)" x="300" y="200" width="200" height="100"/>
+   <rect transform="translate(0 552.36)" x="300" y="400" width="200" height="100"/>
+   <rect transform="translate(0 552.36)" width="500" height="100"/>
+  </g>
+  <g transform="matrix(.13027 0 0 .13027 507.43 -275.29)">
+   <rect transform="translate(0 552.36)" width="200" height="100"/>
+   <rect transform="translate(0 552.36)" x="300" width="200" height="100"/>
+   <rect transform="translate(0 552.36)" y="400" width="200" height="100"/>
+   <rect transform="translate(0 552.36)" x="300" y="400" width="200" height="100"/>
+   <rect transform="translate(0 552.36)" y="200" width="500" height="100"/>
+  </g>
+ </g>
+</svg>
