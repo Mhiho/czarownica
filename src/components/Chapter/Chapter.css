@@ -1,0 +1,10 @@
+.WidthDiv{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.Width{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}

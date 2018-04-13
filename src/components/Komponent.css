@@ -1,0 +1,20 @@
+.Header {
+  position: fixed;
+  height: 50px;
+  width: 100vw;
+  background: lightgreen;
+}
+
+.Lody {
+  height: 1000px;
+  width: 100vw;
+  position: absolute;
+  top: 100%;
+}
+
+.Box {
+  height: 200px;
+  width: 200px;
+  background: green;
+  transform: rotate(0deg);
+}
