@@ -12,6 +12,16 @@ class Komponent extends Component {
     threshold: 0,
     css: 360
   };
+  handleScroll() {
+     let winHeight = window.innerHeight;
+     // Annoying to compute doc height due to browser inconsistency
+     let body = document.body;
+     let html = document.documentElement;
+     let docHeight = Math.max( body.scrollHeight, body.offsetHeight,
+                     html.clientHeight, html.scrollHeight, html.offsetHeight );
+     let value = document.body.scrollTop;
+
+  }
 
   handleChange = ({ isIntersecting, intersectionRatio }) => {
     this.setState({
@@ -54,7 +64,7 @@ class Komponent extends Component {
                0.80, 0.81, 0.82, 0.83, 0.84, 0.85, 0.86, 0.87, 0.88, 0.89,
                0.90, 0.91, 0.92, 0.93, 0.94, 0.95, 0.96, 0.97, 0.98, 0.99,
                1.00]}
-               root={document.getElementsByClassName('Lody')}
+               root={null}
             >
               <div style={{  transform: `rotate(${this.state.css * this.state.threshold/10}deg)`}}className={classes.Box+ ` ${this.state.visibility}`} />
             </Observer>
