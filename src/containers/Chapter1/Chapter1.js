@@ -21,7 +21,6 @@ componentDidMount(){
   data.on('value', snapshot => {
     this.setState({texts: snapshot.val()})
     console.log(this.state.texts);
-    console.log(this.state.scroll)
   });
 }
 

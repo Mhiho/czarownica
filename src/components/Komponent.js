@@ -1,6 +1,7 @@
 import Observer from '@researchgate/react-intersection-observer';
 import React, { Component } from 'react';
 import classes from './Komponent.css';
+import ScrollManager from 'window-scroll-manager'
 
 const getPrintableThreshold = (ratio, range) =>
   range.reduce((prev, curr) =>
@@ -10,18 +11,20 @@ class Komponent extends Component {
   state = {
     visibility: 'hidden',
     threshold: 0,
-    css: 360
+    css: 360,
+    scroll: 0
   };
-  handleScroll() {
-     let winHeight = window.innerHeight;
-     // Annoying to compute doc height due to browser inconsistency
-     let body = document.body;
-     let html = document.documentElement;
-     let docHeight = Math.max( body.scrollHeight, body.offsetHeight,
-                     html.clientHeight, html.scrollHeight, html.offsetHeight );
-     let value = document.body.scrollTop;
-
-  }
+  // handleScroll() {
+  //    let winHeight = window.innerHeight;
+  //    // Annoying to compute doc height due to browser inconsistency
+  //    let body = document.body;
+  //    let html = document.documentElement;
+  //    let docHeight = Math.max( body.scrollHeight, body.offsetHeight,
+  //                    html.clientHeight, html.scrollHeight, html.offsetHeight );
+  //    let value = document.body.scrollTop;
+  //    console.log(winHeight, body, html, docHeight, value);
+  //
+  // }
 
   handleChange = ({ isIntersecting, intersectionRatio }) => {
     this.setState({
@@ -42,14 +45,25 @@ class Komponent extends Component {
       ),
     });
   };
+componentDidMount(){
+  const sm = new ScrollManager();
+  window.addEventListener('window-scroll', (e) => {
+    let scroll =  e.detail.scrollPosition;
+  this.setState({scroll: scroll})
+});
+}
 
   render() {
+
     return (
       <div>
+
         <div className={classes.Header +` ${this.state.visibility}`}>
           {this.state.threshold * 100}%
+          <div>{this.state.scroll}</div>
         </div>
-        <div className={classes.Lody}>
+        <div
+          className={classes.Lody}>
           <div className={this.state.visibility}>
             <Observer
               onChange={this.handleChange}
