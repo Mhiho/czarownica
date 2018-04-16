@@ -3,10 +3,11 @@ import { data } from '../../actions';
 import _ from 'lodash';
 import Chapter from '../../components/Chapter/Chapter';
 import classes from './Chapter1.css';
-import LeftSide from '../../components/LeftSide/LeftSide';
 import Observer from '@researchgate/react-intersection-observer';
 import Komponent from '../../components/Komponent';
 import ScrollManager from 'window-scroll-manager';
+import TitlePage from '../../components/TitlePage/TitlePage';
+
 
 class Chapter1 extends Component {
   constructor(props){
@@ -42,6 +43,7 @@ render(){
   })
   return (
     <div>
+      <TitlePage />
       <div className={classes.SubContainer}>
         <div className={classes.Wraper}>
           <div

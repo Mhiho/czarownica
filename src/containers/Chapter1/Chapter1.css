@@ -1,5 +1,5 @@
 .Text {
-    float:left;
+  float:left;
   justify-content: center;
   align-items: center;
   width: 50%;
@@ -28,11 +28,11 @@
 }
 .SubContainer {
   float:left;
-  width: 50%;
+  width: 40%;
 }
 .SubContainer2 {
   float:left;
-  width: 40%;
+  width: 50%;
   margin-right: 10%;
 }
 .Wraper {

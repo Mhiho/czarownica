@@ -1,0 +1,8 @@
+.Absolute {
+  position: absolute;
+  display: none;
+}
+.Show {
+  display: block;
+  position: absolute;
+}

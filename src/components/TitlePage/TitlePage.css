@@ -1,0 +1,23 @@
+.Cover {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  padding-top: 1px;
+}
+
+
+.Girl {
+  position: absolute;
+  top: 530px;
+  left: 70px;
+
+}
+
+.Absolute {
+  position: absolute;
+  display: none;
+}
+.Show {
+  display: block;
+  position: absolute;
+}

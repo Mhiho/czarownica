@@ -1,0 +1,17 @@
+line, polyline, ellipse, path {
+   stroke: #fff;
+   fill: none;
+   stroke-linecap: round;
+   stroke-linejoin: round;
+   stroke-width: 6;
+   opacity: 0;
+   stroke-miterlimit: 10;
+ }
+
+.Title {
+  color: darkgrey;
+  position: absolute;
+  top: 620px;
+  left: 620px;
+  font-size: 5em;
+}
