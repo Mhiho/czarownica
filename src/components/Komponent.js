@@ -90,3 +90,11 @@ componentDidMount(){
 }
 
 export default Komponent;
+
+
+
+
+// zdjecia nieba z tytulu
+<div className={classes.Cover}>
+
+    </div>

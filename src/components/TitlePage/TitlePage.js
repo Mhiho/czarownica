@@ -2,20 +2,20 @@ import React, {Component} from 'react';
 import classes from './TitlePage.css'
 import Star from './Star';
 import Title from './Title';
+import THREE from 'three';
 
 class TitlePage extends Component{
   state= {
     hidden: true
   }
 
-
-
   render(){
-    let x = Math.random() *5;
     setTimeout(() => {
       this.setState({hidden: false})
     },this.props.y)
+
     return (
+
       <div className={classes.Cover}>
           <Star src={require("../../assets/img/starsBlank.svg")}  y={0}/>
           <Star src={require("../../assets/img/starsproto1.svg")}  y={Math.random()*1000000}/>
